@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+    <title>Grocery Seller Calc</title>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Grocery Seller Calc</h1>
+        </div>
+        <div id="content">
+            <div id="product_add">
+                <label for="product_name">Nazwa produktu: </label>
+                <input type="text" name="product_name" id="product_name"><br><br>
+                <label for="product_kg_price">Cena za kg:</label>
+                <input type="text" name="product_kg_price" id="product_kg_price"><br><br>
+                <button onclick="product_add()">Dodaj produkt</button>
+            </div>
+            <div id="product_list">
+                <span>Lista produktów:</span>
+                <ul id="products"></ul>
+            </div>
+            <div id="user_calc">
+                <br>
+                <span>Pulpit użytkownika</span>
+                <span id="sum">Suma: 0 zł</span><br><br>
+                <div id="calc_tools">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
